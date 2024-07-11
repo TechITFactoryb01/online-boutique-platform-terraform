@@ -2,7 +2,6 @@
 resource "aws_s3_bucket" "terra_s3" {
   bucket = var.bucket_name
   force_destroy = true
-  region = "us-east-1"
 
   tags = {    
     env = var.env_name
