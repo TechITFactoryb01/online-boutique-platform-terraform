@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-east-1"
+}
+
 # Creating S3 Bucket
 resource "aws_s3_bucket" "terra_s3" {
   bucket = var.bucket_name
